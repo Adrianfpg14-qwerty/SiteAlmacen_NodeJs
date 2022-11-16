@@ -1,0 +1,11 @@
+INSERT INTO clientes (id,nombreCliente,direccionCliente,telefonoCliente,correoCliente,passwordCliente,createdAt,updatedAt)
+VALUES (DEFAULT,'Raul Gonzalez','Calle 22A #6A-16','3015338726','hgpolo@uniguajira.edu.co','root','2022-11-07', '2022-11-07');
+
+INSERT INTO ventas (id,fechaVenta,subtotal,impuesto,descuento,total,createdAt,updatedAt,ClienteId)
+VALUES (DEFAULT,'2022-11-07',25000,200,0,25200,'2022-11-07','2022-11-07', 1);
+
+INSERT INTO tipoProductos (id,nombre,createdAt,updatedAt) 
+VALUES (DEFAULT, 'Calzado', '2022-11-07', '2022-11-07');
+
+INSERT INTO productos (id,nombre,marca,precio,stockMin,cantidad,createdAt,updatedAt,TipoProductoId) 
+VALUES (DEFAULT, 'JordanStare B Black', 'Nike', 180000, 25, 1, '2022-11-07', '2022-11-07', 1);
